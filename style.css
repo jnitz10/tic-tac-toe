@@ -1,0 +1,35 @@
+
+
+.cell {
+    width: 150px;
+    height: 150px;
+    font-size: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gameContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+}
+
+.marks {
+    transform: rotate(45deg);
+}
+
+[data-cell-index="0"], [data-cell-index="3"], [data-cell-index="6"] {
+    border-right: 1px solid black;
+}
+
+[data-cell-index="1"], [data-cell-index="4"], [data-cell-index="7"] {
+    border-right: 1px solid black;
+}
+
+[data-cell-index="0"], [data-cell-index="1"], [data-cell-index="2"] {
+    border-bottom: 1px solid black;
+}
+
+[data-cell-index="3"], [data-cell-index="4"], [data-cell-index="5"] {
+    border-bottom: 1px solid black;
+}
